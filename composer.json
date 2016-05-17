@@ -42,7 +42,8 @@
     "scripts": {
         "post-install-cmd": [
             "php oil r install",
-	    "php oil refine migrate --packages=auth"
+	    "php oil refine migrate --packages=auth",
+	    "php oil r migrate"
         ]
     },
     "minimum-stability": "stable"
