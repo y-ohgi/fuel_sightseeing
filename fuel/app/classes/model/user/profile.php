@@ -32,5 +32,21 @@ class Model_User_Profile extends \Orm\Model
         'key_from' => 'id',
         'key_to' => 'user_prof_id',
     ));
-    
+
+
+    /***
+     * ログイン中ユーザーのuser_profiles idを取得
+     */
+    public static function get_id_by_auth(){
+        if(!Auth::check()) {
+            return false;
+        }
+
+        list(, $userid) = Auth::get_user_id();
+
+        $profid = Model_User_Profile::find_by_user_id($userid);
+        
+        return $profid->id;;
+        
+    }
 }

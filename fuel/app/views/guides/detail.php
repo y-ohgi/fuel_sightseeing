@@ -1,10 +1,12 @@
-<ul class="nav nav-pills">
-	<li class='<?php echo Arr::get($subnav, "index" ); ?>'><?php echo Html::anchor('guides/index','Index');?></li>
-	<li class='<?php echo Arr::get($subnav, "register" ); ?>'><?php echo Html::anchor('guides/register','Register');?></li>
-	<li class='<?php echo Arr::get($subnav, "detail" ); ?>'><?php echo Html::anchor('guides/detail','Detail');?></li>
-	<li class='<?php echo Arr::get($subnav, "request" ); ?>'><?php echo Html::anchor('guides/request','Request');?></li>
-	<li class='<?php echo Arr::get($subnav, "requests" ); ?>'><?php echo Html::anchor('guides/requests','Requests');?></li>
-	<li class='<?php echo Arr::get($subnav, "board" ); ?>'><?php echo Html::anchor('guides/board','Board');?></li>
+<pre>
+    <?php var_dump($guide);  ?>
+</pre>
 
-</ul>
-<p>Detail</p>
+<?php if($reqflg): ?>
+    <div class="guide_request" style="text-align:center;">
+	<form action="<?php echo Uri::create("guides/".$guide->id."/request"); ?>" method="post">
+<button class="btn btn-success" href="">この案内に申し込む！</button>
+	</form>
+	
+    </div>
+<?php endif; ?>

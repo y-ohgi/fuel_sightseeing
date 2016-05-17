@@ -5,7 +5,7 @@ class Controller_Auth extends Controller_Template
     public function before()
     {
         parent::before();
-
+        
         //postメソッドの場合 csrfトークンが無いものは全て弾く
         if(Input::method() === "POST" && !Security::check_token()){
             Session::set_flash("error", "ページの期限切れか不正なアクセス");

@@ -10,10 +10,11 @@
     <body>
 	<header class="navbar navbar-default">
 	    <div class="container-fluid">
-		<a class="navbar-brand" href="<?php Uri::create("/"); ?>"><h1>Sightseeing</h1></a>
+		<a class="navbar-brand" href="<?php echo  Uri::create('/'); ?>"><h1>Sightseeing</h1></a>
 		
 		<ul class="nav navbar-nav navbar-right">
 		    <?php if(Auth::check()): ?>
+			<li><a href="#"><?php echo Session::get('username');?></a></li>
 			<li><a href="<?php echo Uri::create("auth/signout");?>">サインアウト</a></li>
 		    <?php else:?>
 			<li><a href="<?php echo Uri::create("auth/signup");?>">サインアップ</a></li>

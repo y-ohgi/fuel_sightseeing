@@ -15,9 +15,12 @@
     <input class="btn btn-info" name="" type="submit" value="検索"/>
 </form>
 
+     
 <?php foreach($guides as $guide): ?>
-
-
+    <pre>
+	<?php var_dump($guide); ?>
+    </pre>
+    
 
 <?php endforeach; ?>
 
