@@ -1,6 +1,11 @@
 Sightseeing
 ---
-現地の人に観光案内をしてもらいたい！
+旅先で、現地の人に観光案内をしてもらいたい！
+観光チラシには載ってないところに連れてってほしい！
+
+## サイト
+[デモサイト](http://sightseeing.herokuapp.com)  
+[スライド](https://docs.google.com/presentation/d/1usUssjlk-ybTL1uZpfUuLBlyJByeWhcbaRi5dy-fSNg/edit?usp=sharing)
 
 ## 概要
 * 観光案内をしたい/できる人と観光案内してもらいたいユーザー同士をマッチング
