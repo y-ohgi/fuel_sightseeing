@@ -19,6 +19,14 @@ Sightseeing
  - 言語指定
 * ユーザーマッチング機能
 
+## 未実装
+* 案内者による観光客承認メソッド
+ - /guides/:id/requests/:id
+* 案内者による観光客否認メソッド
+ - /guides/:id/requests/:id
+* 案内者と観光者の対話用掲示板
+ - /guides/:id/board
+
 ## TODO
 * 日本語化
  - 多言語化
